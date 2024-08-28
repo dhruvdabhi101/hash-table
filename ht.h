@@ -1,8 +1,9 @@
 typedef struct ht ht;
+#include <stdlib.h>
 
 ht* ht_create(void);
 
-void* ht_destroy(ht* table);
+void ht_destroy(ht* table);
 
 void* ht_get(ht* table, const char* key);
 
@@ -18,4 +19,6 @@ typedef struct {
 
 hti ht_iterator(ht* table);
 
-bool ht_next(hti* it);
+short ht_next(hti* it);
+
+size_t ht_length(ht* table);
