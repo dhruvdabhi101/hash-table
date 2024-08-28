@@ -1,9 +1,8 @@
 #include "ht.h"
 #include <stdint.h>
 #include <string.h>
-#include <sys/_types/_size_t.h>
 
-#define INITIAL_CAPACITY 16 // must not be zero
+#define INITIAL_CAPACITY 16
 #define FNV_OFFSET 14695981039346656037UL
 #define FNV_PRIME 1099511628211UL
 
